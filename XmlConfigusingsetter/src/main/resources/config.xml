@@ -1,0 +1,17 @@
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="
+       http://www.springframework.org/schema/beans
+       http://www.springframework.org/schema/beans/spring-beans.xsd">
+    <bean id="add1" class="org.xmlconfig.setter.Address">
+        <property name="num" value="2"></property>
+        <property name="address" value="homestay"></property>
+    </bean>
+    <bean id="student1" class="org.xmlconfig.setter.Student">
+        <property name="sid" value="12"></property>
+        <property name="sname" value="likith"></property>
+        <property name="address" ref="add1"></property>
+
+    </bean>
+
+</beans>
